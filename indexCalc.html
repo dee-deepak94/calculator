@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="indexCalc.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Working Calculator</h1>
+
+        <div class="calcBody">
+
+            <div class="calcInput">
+                <input type="text" name="" id="finalInput" placeholder="0">
+                <img src="backspace-16.png" alt="">
+            </div>
+
+            <div class="calcValues">
+                <div class="row-Divide">
+                    <button class="clear" onclick="finalInput.value = '' ">C</button>
+                    <button class="colorYellow">()</button>
+                    <button class="colorYellow" onclick="insert('%')">%</button>
+                    <button class="colorYellow" onclick="insert('/')">/</button>
+                </div>
+                <div class="row-Divide">
+                    <button class="colorBlue" onclick="insert(7)">7</button>
+                    <button class="colorBlue" onclick="insert(8)" >8</button>
+                    <button class="colorBlue" onclick="insert(9)" >9</button>
+                    <button class="colorYellow" onclick="insert('*')">X</button>
+                </div>
+                <div class="row-Divide">
+                    <button class="colorBlue"onclick="insert(4)">4</button>
+                    <button class="colorBlue"onclick="insert(5)">5</button>
+                    <button class="colorBlue"onclick="insert(6)">6</button>
+                    <button class="colorYellow" onclick="insert('-')">-</button>
+                </div>
+
+                <div class="row-Divide">
+                    <button class="colorBlue" onclick="insert(1)">1</button>
+                    <button class="colorBlue" onclick="insert(2)">2</button>
+                    <button class="colorBlue" onclick="insert(3)">3</button>
+                    <button class="colorYellow" onclick="insert('+')">+</button>
+                </div>
+                <div class="row-Divide">
+                    <button class="colorBlue" onclick="insert('+/-')">+/-</button>
+                    <button class="colorBlue" onclick="insert(0)">0</button>
+                    <button class="colorBlue" onclick="insert('.')">.</button>
+                    <button class="colorSum" onclick="equal()">=</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+    <script src="indexCalc.js"></script>
+</body>
+
+</html>
